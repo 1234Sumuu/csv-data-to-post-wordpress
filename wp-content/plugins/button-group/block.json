@@ -1,0 +1,8 @@
+{
+	"apiVersion": 2,
+	"name": "button-group/button-group",
+	"title": "Button Group",
+	"category": "widgets",
+	"description": "Create Two Buttons To Be Stacked Together",
+	"textdomain": "button-group"
+}

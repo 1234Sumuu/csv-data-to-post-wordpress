@@ -1,0 +1,224 @@
+/*
+Theme Name: BlogSimplicity
+Author: Sumit Berwal
+Description: BlogSimplicity is a clean, minimalist theme designed specifically for bloggers who want a straightforward, easy-to-use platform for their writing. Featuring a responsive layout, it ensures your content looks great on any device. The theme supports custom menus, featured images, and includes a customizable sidebar to showcase your favorite widgets. BlogSimplicity is translation-ready, making it accessible to a global audience. Ideal for those who want a simple yet elegant blog without the fuss.
+Version: 1.1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: blogsimplicity
+Tags: blog, two-columns, right-sidebar, custom-menu, featured-images, translation-ready
+Tested up to: 6.0
+Requires PHP: 5.6
+
+Copyright 2024 Sumit Berwal
+BlogSimplicity is distributed under the terms of the GNU General Public License v2 or later.
+*/
+
+/* Add your theme styles here */
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005177;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+/* Header styles */
+
+.site-header {
+    /* background-color: #333; */
+    color: #fff;
+    padding: 1rem;
+}
+
+.site-header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+}
+
+.site-branding .site-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.site-branding .site-description {
+    margin: 0;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Navigation styles */
+.main-navigation {
+    position: relative;
+    /* background-color: #444; */
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navigation li {
+    position: relative;
+}
+
+.main-navigation a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    /* color: #fff; */
+}
+
+/* Dropdown styles */
+.main-navigation ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.main-navigation ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+.main-navigation li:hover > ul {
+    display: block;
+}
+
+/* Menu toggle button styles */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        padding: 10px 15px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .main-navigation.toggled {
+        display: block;
+    }
+
+    .main-navigation ul {
+        display: block;
+    }
+
+    .main-navigation ul ul {
+        position: static;
+        box-shadow: none;
+    }
+}
+
+/* Accessibility styles */
+.main-navigation .focused a {
+    outline: 2px dashed #333;
+}
+
+/* Additional recommended styles */
+.wp-caption {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: center;
+}
+
+.wp-caption-text {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #777;
+}
+
+.sticky {
+    background-color: #f9f9f9;
+    border: 2px solid #eee;
+}
+
+.gallery-caption {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #777;
+}
+
+.bypostauthor {
+    font-weight: bold;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+/* Sub-menu styles */
+.main-navigation ul ul {
+    display: none;
+}
+
+.main-navigation ul li.open > ul {
+    display: block;
+}
+
+/* Underline the links in content */
+.entry-content a,
+.comment-content a,
+.widget a,
+.custom-options a {
+    text-decoration: underline;
+}
+
